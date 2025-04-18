@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calidad del aire</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark navbar-custom rounded shadow sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler me-2 px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="bi bi-globe2"> Menú</span>
+    </button>
+    <a class="navbar-brand fw-semibold nombreeco" href="#"></a>
+
+    <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de EcoAdministrador</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tips Ambientales</a></li>
+          <li class="nav-item"><a class="nav-link" href="tabla.html">Mapa de Calidad del Aire</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- SECCIÓN PARALLAX -->
+<section class="parallax d-flex mt-0 justify-content-center text-center text-white">
+  <div class="container mt-4 fade-in1">
+    <h1 class="text-center mt-3 mb-5 py-5 emmanuel">
+      Emmanuel Berdejo Sarmiento <i class="bi bi-tree-fill">
+        <h4 class="nombre">Administrador Ambiental. <br>Presidente municipal de la PJ.</h4>
+      </i>
+    </h1>
+    <div class="fade-in">
+    <p class="display-5 mt-5 pt-3 fw-semibold">Conecta con Sabanagrande</p>
+    <p class="lead">Descubre el aire que respiras y las maravillas de este municipio</p>
+    <button class="btn btn-eco mt-3">
+      <i class="bi bi-cloud-sun"></i> Ver mapa de calidad del aire
+    </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN PRINCIPAL -->
+<div class="container col-12 col-lg-12 my-4 fade-in1 rounded-5 p-4">
+
+  <div class="row justify-content-center rounded-5 shadow pt-4 mb-4">
+    <h1 class="text-center mt-4 emmanuel fade-scroll">
+      Quien es Emmanuel?
+    </h1>
+    <div class="col-11 col-sm-10 col-md-8 col-lg-12 fade-scroll">
+      <div class="card text-center rounded-5 border-0 bg-light-green divintfoto card-hover">
+        <img id="imagensojo" src="src/img/emmanuel0.jpg" class="rounded-circle mx-auto shadow fade-scroll">
+        <div class="card-body">
+          <p class="card-text descripcion fade-scroll">
+             Es un joven sabanagrandero gradudado en Administración Ambiental <i class="bi bi-globe-americas nombre"></i> <br> Especializado en dirección de proyectos sostenibles <i class="bi bi-recycle nombre"></i>
+          </p>
+          <div class="fade-scroll">
+          <button class="btn text-white btn-custom btn-eco">
+            <i class="bi bi-globe2"></i> Mas sobre Emmanuel
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="text-center mt-4 nombre fade-scroll">Mira la calidad del aire en tiempo real</h3>
+
+  <div class="row justify-content-center my-5 py-2 fade-scroll">
+    <div class="col-11 col-sm-10 col-md-9 col-lg-9 text-center">
+      <button class="btn text-white btn-custom btn-eco">
+        <i class="bi bi-globe2"></i> Con este mapa puedes ver de manera interactiva la calidad del aire en diferentes partes del mundo y Colombia
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTADO (si luego quieres agregar el mapa interactivo aquí) -->
+<div id="resultado" class="text-center my-5"></div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Tu propio Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
